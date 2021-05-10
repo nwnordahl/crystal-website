@@ -83,7 +83,7 @@ h3 {
 }
 
 .section-2 .container {
-  animation: slideInFromRight 1s ease-in;
+  animation: appear 1s ease-in;
 }
 
 .section-3 {
@@ -94,7 +94,7 @@ h3 {
 }
 
 .section-3 .container {
-  animation: slideInFromLeft 1s ease-in;
+  animation: appear 1s ease-in;
 }
 
 .split {
