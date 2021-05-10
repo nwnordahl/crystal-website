@@ -129,6 +129,12 @@ h3 {
   }
 }
 
+@media (max-width: 40rem) {
+  .section-1 .container {
+    padding: 1rem 0.5rem;
+  }
+}
+
 .button {
   cursor: pointer;
   text-decoration: none;
@@ -161,7 +167,7 @@ a:focus {
   background-color: var(--clr-footer);
   font-weight: 600;
   color: black;
-  padding: 0.3rem 0;
+  padding: 0.4rem 0;
 }
 
 @keyframes slideInFromRight {
