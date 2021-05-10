@@ -15,4 +15,4 @@ $ git clone https://github.com/nwnordahl/crystal-website
 # or visit the url above, and download the files manually
 ```
 
-Then open `index.html` with your favorite web browser.
+Then open `index.html` with your favorite web browser, or host a local server with for example [Live Server](https://ritwickdey.github.io/vscode-live-server/) extension for [VSCode](https://code.visualstudio.com/).

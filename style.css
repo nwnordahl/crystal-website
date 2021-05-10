@@ -52,6 +52,7 @@ h3 {
   color: var(--clr-section-1);
   padding: 0 0 1rem 0;
   text-align: center;
+  animation: appear 1s ease-in;
 }
 
 .section-1 {
@@ -66,6 +67,7 @@ h3 {
   border-radius: 1rem;
   box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
     0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
+  animation: slideInFromBottom 1s ease-in;
 }
 
 .linear-gradient {
@@ -76,6 +78,12 @@ h3 {
   background-color: var(--clr-section-2);
   padding: 2rem 0;
   text-align: left;
+  position: relative;
+  z-index: 10;
+}
+
+.section-2 .container {
+  animation: slideInFromRight 1s ease-in;
 }
 
 .section-3 {
@@ -83,6 +91,10 @@ h3 {
   padding: 2rem 0;
   color: white;
   text-align: left;
+}
+
+.section-3 .container {
+  animation: slideInFromLeft 1s ease-in;
 }
 
 .split {
@@ -100,7 +112,7 @@ h3 {
 
 @media (max-width: 50rem) {
   img {
-    display: none;
+    margin-bottom: 1rem;
   }
 
   .split {
@@ -149,5 +161,41 @@ a:focus {
   background-color: var(--clr-footer);
   font-weight: 600;
   color: black;
-  padding: 1.75rem 0;
+  padding: 0.3rem 0;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(120%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
