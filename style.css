@@ -52,7 +52,10 @@ h3 {
   color: var(--clr-section-1);
   padding: 0 0 1rem 0;
   text-align: center;
-  animation: appear 1s ease-in;
+  opacity: 0;
+  animation: appear 600ms ease;
+  animation-delay: 750ms;
+  animation-fill-mode: forwards;
 }
 
 .section-1 {
@@ -65,9 +68,9 @@ h3 {
   color: white;
   padding: 1rem;
   border-radius: 1rem;
-  box-shadow: 0px 8px 17px 2px rgba(0, 0, 0, 0.14),
-    0px 3px 14px 2px rgba(0, 0, 0, 0.12), 0px 5px 5px -3px rgba(0, 0, 0, 0.2);
-  animation: slideInFromBottom 1s ease-in-out;
+  box-shadow: none;
+  animation: slideInFromBottom 1s ease-in-out forwards,
+    shadow 500ms linear 750ms forwards;
 }
 
 .linear-gradient {
@@ -84,9 +87,7 @@ h3 {
 
 .section-2 .container {
   opacity: 0;
-  animation: appear 600ms ease;
-  animation-delay: 750ms;
-  animation-fill-mode: forwards;
+  animation: appear 600ms ease 750ms forwards;
 }
 
 .section-3 {
@@ -98,9 +99,7 @@ h3 {
 
 .section-3 .container {
   opacity: 0;
-  animation: appear 600ms ease;
-  animation-delay: 750ms;
-  animation-fill-mode: forwards;
+  animation: appear 600ms ease 750ms forwards;
 }
 
 .split {
@@ -173,7 +172,7 @@ a:focus {
   background-color: var(--clr-footer);
   font-weight: 600;
   color: black;
-  padding: 0.4rem 0;
+  padding: 0.3rem 0;
 }
 
 @keyframes slideInFromRight {
@@ -209,5 +208,16 @@ a:focus {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes shadow {
+  0% {
+    box-shadow: none;
+  }
+  100% {
+    box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
+      0px 9px 46px 8px rgba(0, 0, 0, 0.12),
+      0px 11px 15px -7px rgba(0, 0, 0, 0.2);
   }
 }
