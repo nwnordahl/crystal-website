@@ -1,6 +1,6 @@
 # Crystal Website
 
-A responsive website using CSS flexbox. Color palette inspiration from [Coolors](https://coolors.co), and pictures from [Unsplash](https://unsplash.com). Final site is hosted [here](https://zealous-heyrovsky-6a41f6.netlify.app/).
+A responsive website using CSS flexbox. Color palette inspiration from [Coolors](https://coolors.co), and pictures from [Unsplash](https://unsplash.com). The website is deployed to [Netlify](https://netlify.com) and can be found [here](https://zealous-heyrovsky-6a41f6.netlify.app/).
 
 <img src="img/screenshot.png" />
 
