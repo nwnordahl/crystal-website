@@ -1,11 +1,11 @@
+/* Variables */
 :root {
-  --clr-header: #d9dcd6;
   --clr-section-1: #d9dcd6;
-  --clr-section-1-card: #3a7ca5;
   --clr-section-2: #81c3d7;
   --clr-section-3: #16425b;
   --clr-footer: #e3d081;
 
+  --clr-card: #3a7ca5;
   --clr-button: #16425b;
 }
 
@@ -65,41 +65,46 @@ img {
 }
 
 /* Section 1 */
-.linear-gradient {
+.section-1 {
   background: linear-gradient(var(--clr-section-3), var(--clr-section-1) 75%);
+}
+
+.navigation {
+  color: white;
+  padding: 2rem 0;
 }
 
 .header {
   color: var(--clr-section-1);
-  padding: 0 0 1rem 0;
   text-align: center;
+  padding: 0 0 1rem;
+
   opacity: 0;
-  animation: appear 600ms ease;
-  animation-delay: 750ms;
-  animation-fill-mode: forwards;
+  animation: appear 600ms ease 750ms forwards;
 }
 
 .card {
-  padding: 0 0 2rem 0;
   text-align: center;
+  padding: 0 0 2rem;
 }
 
 .card .container {
-  background-color: var(--clr-section-1-card);
   color: white;
-  padding: 1rem;
+  background-color: var(--clr-card);
+  padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
     0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
+
   animation: slideInFromBottom 1s ease-in-out forwards;
 }
 
 /* Section 2 */
 .section-2 {
   background-color: var(--clr-section-2);
-  padding: 2rem 0;
   text-align: left;
   position: relative;
+  padding: 2rem 0;
   z-index: 10;
 }
 
@@ -110,10 +115,10 @@ img {
 
 /* Section 3 */
 .section-3 {
-  background-color: var(--clr-section-3);
-  padding: 2rem 0;
   color: white;
+  background-color: var(--clr-section-3);
   text-align: left;
+  padding: 2rem 0;
 }
 
 .section-3 .container {
@@ -123,11 +128,11 @@ img {
 
 /* Button */
 .button {
+  color: var(--clr-section-3);
+  background-color: white;
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
-  background-color: white;
-  color: var(--clr-section-3);
   padding: 0.35em 1.1em;
   border-radius: 0.5em;
 }
@@ -138,21 +143,16 @@ a:focus-within {
 }
 
 .button:hover,
-.button:focus {
+.button:focus-within {
   background-color: var(--clr-section-1);
 }
 
-.navigation {
-  color: white;
-  padding: 2rem 0;
-}
-
+/* Footer */
 .footer {
+  background-color: var(--clr-footer);
   font-size: 1rem;
   text-align: center;
-  background-color: var(--clr-footer);
   font-weight: 600;
-  color: black;
   padding: 0.3rem 0;
 }
 
